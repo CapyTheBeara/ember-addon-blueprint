@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="assets/qunit.css">
 
     <script src="assets/qunit.js"></script>
-    <script src="assets/main.js"></script>
-    <script src="testem.js"></script>
+    <script src="index.js"></script>
+    <script src="helpers/testem.js"></script>
   </head>
 
   <body>
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
     <script>
-      require('<%= modulePrefix %>/tests/test-helper');
-      require('<%= modulePrefix %>/tests/test-loader');
+      require('<%= modulePrefix %>/tests/helpers/test-helper');
+      require('<%= modulePrefix %>/tests/helpers/test-loader');
     </script>
   </body>
 </html>
