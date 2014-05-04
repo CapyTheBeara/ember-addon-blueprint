@@ -21,7 +21,6 @@
     "broccoli-static-compiler": "0.1.4",
     "broccoli-es6-concatenator": "0.1.4",
     "broccoli-bower": "^0.2.0",
-    "qunitjs": "~1.14.0",
     "broctree-qunit": "git://github.com/monocle/broctree-qunit"
   }
 }
