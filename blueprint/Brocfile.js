@@ -64,13 +64,7 @@ var legacyFilesToAppend = [
     'ember-resolver.js'
   ];
 
-var qunitFiles = pickFiles('vendor', {
-  srcDir: '/qunit/qunit',
-  files: [
-    'qunit.css', 'qunit.js'
-  ],
-  destDir: '/assets/'
-});
+var qunit = require('broctree-qunit');
 
 var testem = pickFiles('tests', {
   files: ['testem.js'],
@@ -87,4 +81,4 @@ var es6 = compileES6(scripts, {
   legacyFilesToAppend: legacyFilesToAppend
 });
 
-return module.exports = mergeTrees([index, es6, qunitFiles, testem], { overwrite: true});
+return module.exports = mergeTrees([index, es6, qunit, testem], { overwrite: true});
